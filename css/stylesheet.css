@@ -1,0 +1,42 @@
+body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #000000;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overscroll-behavior: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        #gameCanvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+        #hud {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Impact', sans-serif;
+            color: #FF0000;
+            font-size: clamp(14px, 2vw, 20px);
+            pointer-events: none;
+        }
+        .hud-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .hud-item img {
+            width: 20px;
+            height: 20px;
+    }
